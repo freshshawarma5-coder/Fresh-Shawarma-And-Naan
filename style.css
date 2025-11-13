@@ -1,0 +1,475 @@
+.back-home-link {
+    display: inline-block;
+    margin: 18px 0 0 24px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.1em;
+    color: #2196f3;
+    text-decoration: none;
+    background: #fff;
+    padding: 8px 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(33,150,243,0.12);
+    transition: background 0.2s, color 0.2s;
+    font-weight: 500;
+}
+.back-home-link:hover {
+    background: #2196f3;
+    color: #fff;
+}
+.contact-section {
+    text-align: center;
+    color: rgb(97, 64, 13);
+    padding: 60px 20px;
+}
+.contact-section h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.5em;
+    margin-bottom: 16px;
+    color: #9b7244;
+    text-shadow: 2px 2px 8px rgba(130, 82, 82, 0.4);
+}
+.contact-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #f2f2f2;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+.contact-details {
+    margin-top: 40px ;
+    text-align: left;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+.contact-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 6px #673d0a;
+}
+.contact-info p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    color: #f2f2f2;
+    margin: 6px 0;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+input[type="your name"],
+input[type="text"], 
+input[type="email"], 
+textarea {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px;
+    cursor: pointer;
+    width: 60%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+label {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.1em;
+    color: #f2f2f2;
+    margin-bottom: 8px;
+    display: block;
+}
+button{
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #b87119;
+    color: white
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 16px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    font-size: 1em;
+    font-family: 'playfair display', Georgia, serif;
+}
+.back-home-link {
+    display: inline-block;
+    margin: 18px 0 0 24px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.1em;
+    color: #2196f3;
+    text-decoration: none;
+    background: #fff;
+    padding: 8px 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(33,150,243,0.12);
+    transition: background 0.2s, color 0.2s;
+    font-weight: 500;
+}
+.back-home-link:hover {
+    background: #2196f3;
+    color: #fff;
+}
+.menu-section {
+    position: relative;
+    z-index: 1;
+}
+.menu-container {
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    position: static;
+    overflow: visible !important;
+    isolation: isolate;
+}
+.menu-card {
+    position: relative;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #181818;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+    overflow: visible;
+    z-index: 10;
+}
+.menu-submenu {
+    font-family: playsir display, georgia, serif;
+    font-size: 25px;
+    display: none;
+    position: calced(absolute);
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #b87119;
+    border: 6px solid #d6a973;
+    border-radius: 6px;
+    padding: 10px;
+    width: max-content;
+    z-index: 999999 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.menu-card:hover .menu-submenu {
+    display: block;
+}
+.menu-submenu.show {
+    display: block;
+}
+.menu-card {
+    background: linear-gradient(135deg, #b1805e 0%, #4b2308 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 18px #d69754;
+    border: 3px solid #bd8a5e;
+    padding: 32px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+.menu-card:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+.menu-card-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: none;
+    text-shadow: 0 1px 6px #2196f3;
+}
+.menu-section {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(40, 30, 20, 0.7);
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    padding: 32px 24px;
+    text-align: center;
+}
+.menu-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 6px #673d0a;
+}
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+}
+.menu-list li {
+    font-family: 'Montserrat', 'Arial Black', Arial, sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    background: rgba(139, 69, 19, 0.7);
+    margin: 12px 0;
+    padding: 16px 0;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.main-title {
+    width: 100vw;
+    min-width: 100vw;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.2em;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 38px 0 28px 0;
+    margin: 0;
+    background: linear-gradient(90deg, #2670b5 0%, #52b7dc 100%);
+    text-shadow: 0 1px 6px #2196f3;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.site-header {
+    width: 100%;
+    background: rgba(40, 30, 20, 0.85);
+    padding: 18px 0 8px 0;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+.site-title {
+    font-family: 'Montserrat', 'Arial Black', Arial, sans-serif;
+    font-size: 2.2em;
+    color: #f2f2f2;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 1px 1px 8px #8B4513;
+}
+.closing-message {
+    font-size: 22px;
+    font-family: 'Playfair Display', cursive, serif;
+    margin-bottom: 24px;
+    margin-top: 18px;
+    background: rgba(40, 30, 20, 0.65);
+    color: #dbc4b4;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 18px 16px;
+}
+.story-section {
+    color: #dbc4b4;
+    font-family: 'Playfair Display', cursive, serif;
+    font-size: 22px;
+    text-align: center;
+    background: rgba(40, 30, 20, 0.7);
+    padding: 24px 18px 18px 18px;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    max-width: 900px;
+    margin: 30px auto 30px auto;
+}
+.story-section h2 {
+    font-family: 'Playfair Display', cursive, serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.video-message-above {
+    color: #dbc4b4;
+    font-family: 'Playfair Display', cursive, serif;
+    font-size: 22px;
+    text-align: center;
+    background: rgba(40, 30, 20, 0.65);
+    padding: 24px 18px 12px 18px;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.video-message-above h2 {
+    font-family: 'Playfair Display', cursive, serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.video-message {
+    color: #dbc4b4;
+    font-family: 'Playfair Display', cursive, serif;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 18px;
+    background: rgba(40, 30, 20, 0.7);
+    padding: 24px 18px 12px 18px;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('myrestaurant.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px) brightness(0.6);
+    z-index: -2;
+}
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 20px 0;
+    width: 100%;
+}
+
+.video-overlay-container {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.video-message-overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 900px;
+    color: #fff;
+    font-family: 'Dancing Script', 'Playfair Display', cursive, serif;
+    font-size: 1.18em;
+    text-align: center;
+    background: rgba(40, 30, 20, 0.65);
+    padding: 24px 18px 12px 18px;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    pointer-events: none;
+}
+.video-message-overlay h2 {
+    font-family: 'Dancing Script', cursive, serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.restaurant-video {
+    width: 100vw;
+    max-width: 1200px;
+    max-height: 400px;
+    aspect-ratio: 16/9;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    background: #fff;
+    object-fit: cover;
+}
+.main-logo {
+    width: 180px;
+    margin-top: 80px;
+    opacity: 0.9;
+    background-position: center;
+}
+.center-title {
+    font-size: 3.5em;
+    margin: 0;
+    text-align: center;
+    color: #8B4513;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 2.2em;
+    text-align: center;
+    color: #fffefe;
+    font-family: 'Segoe Script', cursive, sans-serif;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.center-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+    gap: 18px;
+}
+.nav-link {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.4em;
+    color: rgb(214, 153, 104);
+        text-decoration: underline;
+        text-underline-offset: 6px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+.nav-link:hover {
+    color: #e6d3ca;
+}
+.nav-separator {
+    color: #2a72b1;
+    font-size: 1.3em;
+    font-weight: bold;
+}

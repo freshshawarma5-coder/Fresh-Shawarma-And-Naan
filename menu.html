@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Fresh Shawarma & Naan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="index.html" class="back-home-link">&#8592; Back to Home</a>
+    <div class="main-title">Fresh Shawarma &amp; Naan</div>
+    <section class="menu-section">
+        <h1 class="menu-title">Our Menu</h1>
+        <div class="menu-grid">
+            <div class="menu-card"><span class="menu-card-title">Wraps</span>
+                <div class="menu-submenu">
+                    <p>1. Chicken Wrap.....................5.00£   ;7.00£</p>
+                    <p>2. Lamb Wrap..........................6.00£   ;8.00£</p>
+                    <p>3. Mix Wrap...........................6.00£    ;8.00£</p>
+                    <p>4. falafel wrap.......................4.00£</p>
+                    <p>5. sheesh kabab wrap..................6.00£</p>
+                </div>
+            </div>
+            <div class="menu-card"><span class="menu-card-title">Grill</span>
+                <div class="menu-submenu">
+                    <p>1. 2 Sheesh Kabab.......................12.00£</p>
+                    <p>2. 2 Sheesh Tikka.......................12.00£</p>
+                    <p>3. 2 Lamb Tikka.........................14.00£</p>
+                    <p>4. Chiken Wings..........................8.00£</p>
+                    <p>5. fish.................................15.00£</p>
+                </div>
+            </div>
+            <div class="menu-card"><span class="menu-card-title">Pizza</span>
+                <div class="menu-submenu">
+                    <p>Chicken Pizza............................7.00£</p>
+                    <p>Lamb Pizza...............................8.00£</p>
+                    <p>Mix Pizza................................8.00£</p>
+                    <p>Chicken fatayer..........................</p>
+                    <p>Chips............................2.00£,  3.00£</p>
+                    <p>chips and Cheese.........................3.50£</p>
+                </div>
+            </div>
+            <div class="menu-card"><span class="menu-card-title">Kozi</span>
+                <div class="menu-submenu">
+                    <p>1. Lamb Kozi............................13.00£</p>
+                    <p>2. Chek Kozi............................12.00£</p> 
+                    <p>3. Only rice with beans..................6.00£</p>
+                    <p>4. Chicken Shawarma on rice...........7.00£, 9.00£</p>
+                    <p>5. Lamb Or mixed shawarma on rice.....8.00£, 10.00£</p>
+                    <p>6. Plain rice............................3.00£, 4.00£</p>
+                    <p>7. Any soup..............................2.00£</p>
+                    <p>8. Mixed salad...........................2.00£</p>
+                    <p>9. Any extra.............................0.30£</p>
+                    <p>10. Biryani..............................6.00£</p>
+                </div>
+            </div>
+            <div class="menu-card"><span class="menu-card-title">Meals</span>
+                <div class="menu-submenu">
+                    <p>1. Chicken wrap meal.........................7.00£</p>
+                    <p>2. Lamb wrap meal...........................8.00£</p>
+                    <p>3. Mix wrap meal............................8.00£</p>
+                    <p>4. chicken plat meal.........................9.00£</p>
+                    <p>5. Lamb/mix plat meal......................10.00£</p>
+                    <p>6. Portion of biryani.......................6.00£</p>
+                </div>
+            </div>
+            <div class="menu-card"><span class="menu-card-title">Shawarma Box</span>
+                <div class="menu-submenu">
+                    <p>1. Chicken Shawarma Box................7.00£; 9.00£; 12.00£</p>
+                    <p>2. Lamb Shawarma Box...................8.00£; 11.00£; 14.00£</p>
+                    <p>3. Mix Shawarma Box....................8.00£; 11.00£; 14.00£</p>
+                    <p>4. Portion of Falafel...........................6.00£</p>
+                    <p>5. portion of Chicken Nugget................6.00£</p>
+                </div>
+            </div>
+            <div class="menu-card"><span class="menu-card-title">Specials</span>
+                <div class="menu-submenu">
+                    <p>1. Special Mix 1................................30.00£<br>
+                        Lamb kefta, Lamb tikka, Chicken wings serciced with rice, salad, fresh naans, and 2 soups
+                    </p>
+                    <p>2. Special Mix 2................................50.00£<br>
+                        Lamb kefta, Lamb tikka, Sheesh kabab, Chicken tikka, Chicken wings serviced with rice, salad, fresh naans, and 4 soups
+                    </p>
+                </div>
+            </div>
+            <div class="menu-card"><span class="menu-card-title">Naans</span>
+                <div class="menu-submenu">
+                    <p>1. Plain Naan                               </p>
+                    <p>2. Garlic Naan                              </p>
+                    <p>3. Brown Naan<br>
+                                        (1.50 £ each pack)
+                    </p> 
+                </div>
+            </div>
+            <div class="menu-card"><span class="menu-card-title">Drinks</span>
+                <div class="menu-submenu">
+                    <p>1. Any soft drinks..............................1.20£</p>
+                    <p>2. Water........................................1.00£</p>
+                    <p>3. Black tea....................................1.00£</p>
+                    <p>4. Ayran........................................1.50£</p>
+                </div>
+            </div>
+            <div id="floating-submenu" class="floating-submenu">
+
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+            const menuCards = document.querySelectorAll('.menu-card');
+
+            menuCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const submenu = card.querySelector('.menu-submenu');
+                    if (submenu) {
+                        submenu.classList.toggle('show');
+                    }
+                });
+            });
+        });
+        </script>
+</body>
+</html>
